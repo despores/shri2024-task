@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Яндекс.Дом</title>
-    <link rel="preload" as="font" href="assets/lato.woff2" type="font/woff2" crossorigin="anonymous">
-    <script src="vendors/react-with-dom.js"></script>
+    <script async src="vendors/react-with-dom.js"></script>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -81,7 +80,7 @@
             if (onSize) {
                 onSize({ width, height });
             }
-        });
+        }, [onSize]);
 
         return <li ref={ref} className={'event' + (props.slim ? ' event_slim' : '')}>
             <button className="event__button">
@@ -209,6 +208,7 @@
     function Main() {
         const ref = React.useRef();
         const initedRef = React.useRef(false);
+        const sizesRef = React.useRef([]);
         const [activeTab, setActiveTab] = React.useState('');
         const [hasRightScroll, setHasRightScroll] = React.useState(false);
 
@@ -217,15 +217,14 @@
                 initedRef.current = true;
                 setActiveTab(new URLSearchParams(location.search).get('tab') || 'all');
             }
-        });
+        }, [activeTab]);
 
         const onSelectInput = event => {
             setActiveTab(event.target.value);
         };
 
-        let sizes = [];
         const onSize = size => {
-            sizes = [...sizes, size];
+            sizesRef.current = [...sizesRef.current, size];
         };
 
         React.useEffect(() => {
@@ -236,7 +235,7 @@
             if (newHasRightScroll !== hasRightScroll) {
                 setHasRightScroll(newHasRightScroll);
             }
-        });
+        }, [hasRightScroll, ref.current?.offsetWidth]);
 
         const onArrowCLick = () => {
             const scroller = ref.current.querySelector('.section__panel:not(.section__panel_hidden)');
