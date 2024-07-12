@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shri2024-task/static/css/main.7a3eda54.css",
-    "main.js": "/shri2024-task/static/js/main.b1cd0073.js",
+    "main.css": "/shri2024-task/static/css/main.7e710c53.css",
+    "main.js": "/shri2024-task/static/js/main.301d7096.js",
     "static/media/bg@2x.png": "/shri2024-task/static/media/bg@2x.b23d48f2e17f0ebd4d42.png",
     "static/media/icon_sun.svg": "/shri2024-task/static/media/icon_sun.ab45bd1abea4a81765bb.svg",
     "static/media/arrow-down.svg": "/shri2024-task/static/media/arrow-down.d655218a2b02d5911247.svg",
@@ -13,11 +13,11 @@
     "static/media/icon_list_m@1x.svg": "/shri2024-task/static/media/icon_list_m@1x.2c481f94300218fcebd0.svg",
     "static/media/icon_scheduled.svg": "/shri2024-task/static/media/icon_scheduled.71bbb008775a1c81db81.svg",
     "index.html": "/shri2024-task/index.html",
-    "main.7a3eda54.css.map": "/shri2024-task/static/css/main.7a3eda54.css.map",
-    "main.b1cd0073.js.map": "/shri2024-task/static/js/main.b1cd0073.js.map"
+    "main.7e710c53.css.map": "/shri2024-task/static/css/main.7e710c53.css.map",
+    "main.301d7096.js.map": "/shri2024-task/static/js/main.301d7096.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a3eda54.css",
-    "static/js/main.b1cd0073.js"
+    "static/css/main.7e710c53.css",
+    "static/js/main.301d7096.js"
   ]
 }
