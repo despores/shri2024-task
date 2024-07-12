@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/despores/shri2024-task/issues"
   },
-  "homepage": "https://github.com/despores/shri2024-task#readme",
+  "homepage": "https://despores.github.io/shri2024-task/",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
