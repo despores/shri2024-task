@@ -1,4 +1,7 @@
 import React from "react";
+import "./reset.css";
+import "./styles.css";
+
 
 export function Header() {
   let [expanded, setExpanded] = React.useState(false);
